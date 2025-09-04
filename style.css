@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+}
+.loader {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Estilos para as notificações (Toast) */
+.toast {
+  animation: slide-in 0.5s forwards, fade-out 0.5s 2.5s forwards;
+}
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateX(100%); }
+}
